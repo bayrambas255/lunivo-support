@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lunivo · Kullanım Koşulları" />
+  <meta name="theme-color" content="#1FB6A6" />
+  <title>Lunivo · Kullanım Koşulları</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B1%3C/text%3E%3C/svg%3E" />
+  <style>
+:root{--brand:#1FB6A6;--brand-soft:#CDEEE9;--brand-dark:#0E7F73;--bg:#EEF5F3;--surface:#FBFEFD;--text:#122A26;--text-secondary:#3C5A55;--text-tertiary:#6C8B85;--divider:#D5E6E1;--radius:18px;--radius-sm:12px;--shadow:0 1px 2px rgba(0,0,0,.04),0 8px 24px #1FB6A614;}
+@media (prefers-color-scheme:dark){:root{--bg:#13201E;--surface:#1C2A28;--text:#EAF4F1;--text-secondary:#AFC5C0;--text-tertiary:#7A938E;--divider:#2B3D39;--shadow:0 1px 2px rgba(0,0,0,.2),0 8px 24px rgba(0,0,0,.3);}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--brand-dark);text-decoration:none}a:hover{text-decoration:underline}
+.container{max-width:720px;margin:0 auto;padding:32px 20px 80px}
+header{text-align:center;padding:24px 0 28px}
+.logo{width:72px;height:72px;margin:0 auto 16px;background:linear-gradient(135deg,var(--brand) 0%,var(--brand-dark) 100%);border-radius:22px;display:flex;align-items:center;justify-content:center;font-size:36px;box-shadow:0 8px 24px #1FB6A64D}
+h1{font-size:30px;font-weight:700;margin:0 0 6px;letter-spacing:-.4px}
+.tagline{color:var(--text-secondary);font-size:16px;margin:0}
+.breadcrumb{font-size:13px;color:var(--text-tertiary);margin-bottom:8px}.breadcrumb a{color:var(--text-secondary)}
+.last-updated{color:var(--text-tertiary);font-size:13px;margin:0 0 24px}
+.card{background:var(--surface);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);margin-bottom:18px}
+.card h2{font-size:19px;font-weight:600;margin:0 0 14px;letter-spacing:-.2px}
+.card p{color:var(--text-secondary);font-size:15px;margin:0 0 12px}.card p:last-child{margin-bottom:0}
+.contact-cta{display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:#fff;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;transition:background .2s}
+.contact-cta:hover{background:var(--brand-dark);text-decoration:none;color:#fff}
+.response-time{display:block;color:var(--text-tertiary);font-size:13px;margin-top:12px}
+.faq-item{padding:14px 0;border-top:1px solid var(--divider)}.faq-item:first-of-type{border-top:none;padding-top:0}.faq-item:last-of-type{padding-bottom:0}
+.faq-item h3{font-size:15px;font-weight:600;margin:0 0 6px;color:var(--text)}.faq-item p{font-size:14.5px;color:var(--text-secondary);margin:0}
+.legal-links{display:flex;gap:12px;flex-wrap:wrap}
+.legal-links a{flex:1;min-width:200px;background:var(--bg);border:1px solid var(--divider);border-radius:var(--radius-sm);padding:14px 18px;color:var(--text);font-weight:500;font-size:15px;display:flex;align-items:center;justify-content:space-between;transition:border-color .2s,background .2s}
+.legal-links a:hover{border-color:var(--brand);background:var(--surface);text-decoration:none}.legal-links a::after{content:"→";color:var(--text-tertiary);font-size:18px}
+.legal-content h1{font-size:30px;margin:0 0 6px;letter-spacing:-.4px}
+.legal-content h2{font-size:20px;margin:28px 0 10px;font-weight:600;letter-spacing:-.2px}
+.legal-content h3{font-size:16px;margin:18px 0 8px;font-weight:600}
+.legal-content h4{font-size:14.5px;margin:14px 0 6px;font-weight:600;color:var(--text-secondary)}
+.legal-content p,.legal-content ul{color:var(--text-secondary);font-size:15px;margin:0 0 10px}
+.legal-content ul{padding-left:22px}.legal-content ul li{margin-bottom:4px}
+.legal-content strong{color:var(--text);font-weight:600}
+.legal-content code{background:var(--surface);padding:1px 6px;border-radius:4px;font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:13.5px}
+.legal-content hr{border:none;border-top:1px solid var(--divider);margin:32px 0}
+.legal-content blockquote{border-left:3px solid var(--brand);background:#CDEEE933;padding:12px 16px;margin:16px 0;border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+.legal-content blockquote p{margin:0;color:var(--text)}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--radius-sm)}
+.legal-content table{width:100%;border-collapse:collapse;background:var(--surface);font-size:14px}
+.legal-content th,.legal-content td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--divider)}
+.legal-content th{background:var(--bg);color:var(--text);font-weight:600;font-size:13px;letter-spacing:.2px}
+.legal-content td{color:var(--text-secondary)}
+footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--divider);text-align:center;color:var(--text-tertiary);font-size:13px}
+footer .links{margin-bottom:12px;display:flex;gap:20px;justify-content:center;flex-wrap:wrap}footer .links a{color:var(--text-secondary)}
+@media (max-width:480px){.container{padding:20px 16px 60px}h1,.legal-content h1{font-size:24px}.card{padding:22px}}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo" aria-hidden="true">🌱</div>
+      <h1>Lunivo</h1>
+    </header>
+    <p class="breadcrumb"><a href="./">← Destek</a></p>
+    <p class="last-updated">Son güncelleme: 2026-06-26</p>
+    <div class="legal-content">
+<h1>Lunivo Kullanım Koşulları</h1>
+<p><strong>Yürürlük tarihi:</strong> 2026-06-26 <strong>Son güncelleme:</strong> 2026-06-26 <strong>Sürüm:</strong> 1.0</p>
+<p>Bu Kullanım Koşulları ("<strong>Koşullar</strong>"), Bayram Baş (bireysel geliştirici) ("<strong>Sağlayıcı</strong>", "<strong>biz</strong>") tarafından sunulan Lunivo mobil uygulamasını ("<strong>Uygulama</strong>" veya "<strong>Hizmet</strong>") kullanımınızı düzenler. Uygulamayı indirerek veya kullanarak bu Koşulları kabul etmiş olursunuz.</p>
+<hr />
+<h2>1. Tanımlar</h2>
+<ul><li><strong>Uygulama / Hizmet:</strong> Lunivo mobil uygulaması ve tüm özellikleri.</li><li><strong>Sağlayıcı:</strong> Bayram Baş (bireysel geliştirici).</li><li><strong>Siz / Kullanıcı:</strong> Uygulamayı kullanan gerçek kişi.</li><li><strong>Lunivo Pro:</strong> Uygulama içi satın alma ile açılan abonelik tabanlı premium özellikler.</li></ul>
+<hr />
+<h2>2. Sözleşmenin Kabulü ve Yaş Şartı</h2>
+<ul><li>Bu Koşulları kabul etmiyorsanız Uygulamayı kullanmayın.</li><li>Uygulamayı kullanmak için <strong>en az 13 yaşında</strong> olmalısınız. 18 yaşından küçükseniz, bir ebeveyn veya vasinin gözetiminde kullanmanız gerekir.</li><li>Uygulama sağlık ve fitness amaçlı <strong>genel bilgi</strong> sunar; tıbbi tavsiye değildir (bkz. Bölüm 9).</li></ul>
+<hr />
+<h2>3. Hesap Gerekmez</h2>
+<p>Lunivo <strong>hesap, üyelik veya giriş gerektirmez.</strong> Kullanıcı adı veya şifre oluşturmazsınız.</p>
+<ul><li>Tüm verileriniz <strong>yalnızca cihazınızda</strong> saklanır (ayrıntılar Gizlilik Politikası'nda).</li><li>Cihazınızın güvenliği (ekran kilidi vb.) sizin sorumluluğunuzdadır. Dilerseniz Uygulamayı <strong>Face ID</strong> ile kilitleyebilirsiniz.</li><li>Verilerinizi uygulama içindeki <strong>Verileri Sil</strong> akışıyla kaldırabilir veya Uygulamayı silerek tamamen yok edebilirsiniz. Bizde verilerinizin bir kopyası bulunmadığından, geri yükleme veya yedekleme bizim tarafımızdan sağlanmaz; cihaz değişiminde veri taşıma sorumluluğu size aittir.</li></ul>
+<hr />
+<h2>4. Hizmetin Kapsamı ve Lisans</h2>
+<h3>4.1 Kullanım hakkı (lisans)</h3>
+<p>Bu Koşullara uyduğunuz sürece, size Uygulamayı <strong>kişisel, ticari olmayan, devredilemez, münhasır olmayan, geri alınabilir</strong> bir lisansla kullanma hakkı veririz. Bu lisans, Koşulları ihlal etmeniz veya Uygulamayı kaldırmanız halinde otomatik olarak sona erer.</p>
+<h3>4.2 Apple App Store EULA</h3>
+<p>Apple'ın "<strong>Licensed Application End User License Agreement</strong>" (Standart EULA) şartları bu Sözleşmeye dahildir ve <strong>siz ile Sağlayıcı</strong> arasında geçerlidir:</p>
+<ul><li>Apple bu Sözleşmenin tarafı <strong>değildir</strong>, ancak <strong>üçüncü taraf yararlanıcısıdır</strong> (third-party beneficiary) ve Sözleşmeyi size karşı uygulatma hakkına sahiptir.</li><li>Uygulama yalnızca Apple markalı cihazlarda, cihaz başına bir Apple ID ile kullanılabilir.</li><li>Tersine mühendislik yasaktır.</li><li>Apple, Uygulamaya ilişkin <strong>hiçbir garanti veya bakım/destek yükümlülüğü</strong> üstlenmez; bu yükümlülükler tümüyle Sağlayıcıya aittir.</li><li>Uygulamadan kaynaklanan ürün sorumluluğu, yasal uyum ve fikri mülkiyet talepleri Apple'a değil <strong>Sağlayıcıya</strong> yöneltilir.</li></ul>
+<hr />
+<h2>5. Kullanıcı Yükümlülükleri</h2>
+<p>Uygulamayı kullanırken:</p>
+<ul><li>Yürürlükteki yasalara uygun hareket etmelisiniz.</li><li>Uygulamanın güvenlik mekanizmalarını atlatmaya, uygulama içi satın almayı manipüle etmeye çalışmamalısınız.</li><li>Yasanın izin verdiği sınırlar dışında Uygulamayı tersine mühendislik yapmamalı, decompile etmemelisiniz.</li></ul>
+<p>Bu kurallara aykırı kullanımdan doğan sorumluluk size aittir.</p>
+<hr />
+<h2>6. Verileriniz ve İçeriğiniz</h2>
+<p>Uygulamada oluşturduğunuz tüm içerik (öğün kayıtları, alışkanlıklar, notlar, ölçümler vb.) <strong>size aittir</strong> ve <strong>yalnızca cihazınızda</strong> saklanır.</p>
+<ul><li>Bu içerik bizim sunucularımıza <strong>gönderilmez</strong>; Sağlayıcı içeriğinizi görmez, barındırmaz, saklamaz veya işlemez.</li><li>Cihaz-öncelikli mimari nedeniyle Sağlayıcıya herhangi bir içerik lisansı vermeniz gerekmez ve içerik moderasyonu uygulanmaz.</li><li>İçeriğinizi yedeklemek veya başka cihaza taşımak sizin sorumluluğunuzdadır.</li></ul>
+<hr />
+<h2>7. Fikri Mülkiyet</h2>
+<ul><li>Uygulama; logosu, marka adı, arayüz tasarımı, kodu, görselleri ve tüm bileşenleri Bayram Baş (bireysel geliştirici) mülkiyetindedir ve telif/marka/tasarım hukuku ile korunur.</li><li>Uygulamayı kullanmanız size fikri mülkiyet hakkı vermez.</li><li>Lunivo adı, logoları ve ticari görünümü Sağlayıcının yazılı izni olmadan kullanılamaz.</li></ul>
+<hr />
+<h2>8. Üçüncü Taraf Hizmetleri</h2>
+<p>Uygulama yalnızca aşağıdaki Apple platform hizmetleriyle etkileşir:</p>
+<ul><li><strong>Apple App Store / StoreKit</strong> — Lunivo Pro satın alımı ve aboneliği.</li><li><strong>Apple HealthKit</strong> — izninizle sağlık verilerinizi cihazda okuma/yazma.</li></ul>
+<p>Bu hizmetler Apple'ın kendi kullanım koşulları ve gizlilik politikalarına tabidir. Apple hizmetlerinin kullanılabilirliği veya işleyişinden <strong>Sağlayıcı sorumlu değildir</strong>.</p>
+<hr />
+<h2>9. Sağlık Sorumluluk Reddi</h2>
+<ul><li>Lunivo bir <strong>wellness ve fitness</strong> aracıdır; <strong>tıbbi cihaz değildir</strong> ve tıbbi tavsiye, teşhis veya tedavi sağlamaz.</li><li>Kalori hedefleri, antrenman planları ve öneriler <strong>genel bilgilendirme</strong> amaçlıdır; kişiye özel tıbbi danışmanlığın yerine geçmez.</li><li>Beslenme, egzersiz veya kilo programına başlamadan önce — özellikle bir sağlık durumunuz, hamilelik veya yeme bozukluğu öyküsü varsa — bir <strong>sağlık profesyoneline</strong> danışın.</li><li>Uygulamadaki bilgilere dayanarak verdiğiniz kararlardan doğan sonuçlardan Sağlayıcı sorumlu değildir. Acil bir sağlık durumunda yerel acil servislere başvurun.</li></ul>
+<hr />
+<h2>10. Ücretler, Abonelik ve Satın Alma</h2>
+<h3>10.1 Ücretsiz ve premium katman</h3>
+<p>Uygulamanın temel takip özellikleri <strong>ücretsizdir</strong>. <strong>Lunivo Pro</strong> premium özellikleri uygulama içi satın alma ile açılır.</p>
+<h3>10.2 Apple App Store üzerinden ödeme</h3>
+<ul><li>Tüm ödemeler <strong>Apple App Store / StoreKit</strong> üzerinden işlenir.</li><li>Ücretler <strong>Apple Media Services Terms</strong> ve <strong>App Store EULA</strong> kapsamında düzenlenir.</li><li>Kart bilgileriniz Apple tarafından işlenir; bize iletilmez.</li><li>Faturalama, Apple ID'nizin kayıtlı olduğu para birimi ve fiyat seviyesi üzerinden yapılır.</li></ul>
+<h3>10.3 Abonelik (Apple zorunlu beyanlar)</h3>
+<ul><li><strong>Fiyat:</strong> Uygulama içinde açıkça gösterilen güncel App Store fiyatı (yerel para biriminizde).</li><li><strong>Süre:</strong> Aylık / yıllık seçenekleri Uygulama içinde sunulur; satın alma öncesi süre açıkça gösterilir.</li><li><strong>Otomatik yenileme:</strong> Abonelik, mevcut dönem bitiminden en az 24 saat önce iptal edilmediği sürece <strong>otomatik yenilenir</strong>.</li><li><strong>Yenileme ücretlendirmesi:</strong> Yenileme ücreti, mevcut dönem bitiminden önceki 24 saat içinde Apple ID'nizden tahsil edilir.</li><li><strong>İptal:</strong> Aboneliği iOS Ayarlar → Apple ID → Abonelikler → Lunivo yolundan iptal edebilirsiniz. Uygulama içi kısayol: Ayarlar → Aboneliğimi Yönet.</li><li><strong>Mevcut dönem:</strong> İptal sonrası, ödenmiş dönemin sonuna kadar erişim devam eder; kısmi iade verilmez.</li><li><strong>Ücretsiz deneme (sunulursa):</strong> Deneme bitiminden 24 saat önce iptal etmezseniz abonelik otomatik başlar.</li></ul>
+<h3>10.4 Fiyat değişiklikleri</h3>
+<p>Fiyat değişikliğinde Apple aracılığıyla bilgilendirilirsiniz ve StoreKit kuralları gereği yeni fiyatı açıkça onaylamanız istenir; onaylamadığınız sürece yeni fiyat uygulanmaz.</p>
+<h3>10.5 İade politikası</h3>
+<ul><li>İadeler <strong>Apple Media Services Terms</strong> uyarınca Apple tarafından işlenir.</li><li>İade taleplerinizi doğrudan Apple'a iletmeniz gerekir: reportaproblem.apple.com</li><li>Sağlayıcının doğrudan iade verme yetkisi yoktur.</li></ul>
+<h3>10.6 AB ve TR tüketici hakları</h3>
+<ul><li>AB Tüketici Hakları Yönergesi 2011/83/EU Madde 16(m) uyarınca, anında erişilebilir dijital içerik için <strong>14 günlük cayma hakkından açıkça vazgeçtiğinizi</strong> kabul edersiniz.</li><li>6502 sayılı Kanun "Mesafeli Sözleşmeler Yönetmeliği" Madde 15(1)(ğ) uyarınca, anında ifa edilen dijital içerik için cayma hakkı kullanılamaz.</li></ul>
+<hr />
+<h2>11. Garanti Reddi</h2>
+<p>Uygulama "<strong>olduğu gibi</strong>" ve "<strong>mevcut haliyle</strong>" sunulur. Yasanın izin verdiği azami ölçüde, Uygulamanın kesintisiz, hatasız veya belirli bir amaca uygun olacağına dair açık veya zımni hiçbir garanti vermeyiz.</p>
+<hr />
+<h2>12. Sorumluluk Sınırlaması</h2>
+<p>Yasanın izin verdiği azami ölçüde Sağlayıcı; dolaylı, arızi, özel veya sonuç niteliğindeki zararlardan sorumlu değildir. Sağlayıcının toplam sorumluluğu, talep tarihinden önceki 12 ayda Uygulama için ödediğiniz tutarı (veya ücretsiz kullanımda sıfırı) aşamaz.</p>
+<hr />
+<h2>13. Tazminat</h2>
+<p>Koşulları ihlaliniz veya Uygulamayı hukuka aykırı kullanımınızdan doğan üçüncü taraf taleplerine karşı Sağlayıcıyı tazmin etmeyi kabul edersiniz.</p>
+<hr />
+<h2>14. Fesih</h2>
+<ul><li>Uygulamayı dilediğiniz an kullanmayı bırakabilir, verilerinizi silebilir veya Uygulamayı kaldırabilirsiniz.</li><li>Koşulları ihlal etmeniz halinde lisansınız sona erer.</li></ul>
+<hr />
+<h2>15. Hizmetin Değiştirilmesi</h2>
+<p>Uygulamayı geliştirmek için özellikleri zaman zaman ekleyebilir, değiştirebilir veya kaldırabiliriz.</p>
+<hr />
+<h2>16. Koşulların Değiştirilmesi</h2>
+<p>Bu Koşulları güncelleyebiliriz. Güncel sürüm <a href="https://bayrambas255.github.io/lunivo-support-support/tr/terms.html" target="_blank" rel="noopener">https://bayrambas255.github.io/lunivo-support-support/tr/terms.html</a> adresinde yayınlanır. Önemli değişikliklerden sonra Uygulamayı kullanmaya devam etmeniz, güncel Koşulları kabul ettiğiniz anlamına gelir.</p>
+<hr />
+<h2>17. Geçerli Hukuk ve Yetkili Mahkeme</h2>
+<p>Bu Koşullar <strong>Türkiye Cumhuriyeti</strong> hukukuna tabidir. Uyuşmazlıklarda <strong>İstanbul</strong> mahkemeleri ve icra daireleri yetkilidir. Tüketici işlemlerinde, tüketici lehine olan yetki ve hukuk kuralları saklıdır.</p>
+<hr />
+<h2>18. İletişim</h2>
+<ul><li><strong>E-posta:</strong> <a href="mailto:bayrambas255@icloud.com">bayrambas255@icloud.com</a></li><li><strong>Web:</strong> <a href="https://bayrambas255.github.io/lunivo-support" target="_blank" rel="noopener">https://bayrambas255.github.io/lunivo-support</a></li></ul>
+    </div>
+    <footer>
+      <div class="links"><a href="privacy.html">Gizlilik</a><a href="terms.html">Koşullar</a><a href="./">Destek</a></div>
+      © <span id="year">2026</span> Lunivo · <a href="mailto:bayrambas255@icloud.com">bayrambas255@icloud.com</a>
+    </footer>
+  </div>
+  <script>var y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lunivo · Gizlilik Politikası" />
+  <meta name="theme-color" content="#1FB6A6" />
+  <title>Lunivo · Gizlilik Politikası</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B1%3C/text%3E%3C/svg%3E" />
+  <style>
+:root{--brand:#1FB6A6;--brand-soft:#CDEEE9;--brand-dark:#0E7F73;--bg:#EEF5F3;--surface:#FBFEFD;--text:#122A26;--text-secondary:#3C5A55;--text-tertiary:#6C8B85;--divider:#D5E6E1;--radius:18px;--radius-sm:12px;--shadow:0 1px 2px rgba(0,0,0,.04),0 8px 24px #1FB6A614;}
+@media (prefers-color-scheme:dark){:root{--bg:#13201E;--surface:#1C2A28;--text:#EAF4F1;--text-secondary:#AFC5C0;--text-tertiary:#7A938E;--divider:#2B3D39;--shadow:0 1px 2px rgba(0,0,0,.2),0 8px 24px rgba(0,0,0,.3);}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--brand-dark);text-decoration:none}a:hover{text-decoration:underline}
+.container{max-width:720px;margin:0 auto;padding:32px 20px 80px}
+header{text-align:center;padding:24px 0 28px}
+.logo{width:72px;height:72px;margin:0 auto 16px;background:linear-gradient(135deg,var(--brand) 0%,var(--brand-dark) 100%);border-radius:22px;display:flex;align-items:center;justify-content:center;font-size:36px;box-shadow:0 8px 24px #1FB6A64D}
+h1{font-size:30px;font-weight:700;margin:0 0 6px;letter-spacing:-.4px}
+.tagline{color:var(--text-secondary);font-size:16px;margin:0}
+.breadcrumb{font-size:13px;color:var(--text-tertiary);margin-bottom:8px}.breadcrumb a{color:var(--text-secondary)}
+.last-updated{color:var(--text-tertiary);font-size:13px;margin:0 0 24px}
+.card{background:var(--surface);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);margin-bottom:18px}
+.card h2{font-size:19px;font-weight:600;margin:0 0 14px;letter-spacing:-.2px}
+.card p{color:var(--text-secondary);font-size:15px;margin:0 0 12px}.card p:last-child{margin-bottom:0}
+.contact-cta{display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:#fff;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;transition:background .2s}
+.contact-cta:hover{background:var(--brand-dark);text-decoration:none;color:#fff}
+.response-time{display:block;color:var(--text-tertiary);font-size:13px;margin-top:12px}
+.faq-item{padding:14px 0;border-top:1px solid var(--divider)}.faq-item:first-of-type{border-top:none;padding-top:0}.faq-item:last-of-type{padding-bottom:0}
+.faq-item h3{font-size:15px;font-weight:600;margin:0 0 6px;color:var(--text)}.faq-item p{font-size:14.5px;color:var(--text-secondary);margin:0}
+.legal-links{display:flex;gap:12px;flex-wrap:wrap}
+.legal-links a{flex:1;min-width:200px;background:var(--bg);border:1px solid var(--divider);border-radius:var(--radius-sm);padding:14px 18px;color:var(--text);font-weight:500;font-size:15px;display:flex;align-items:center;justify-content:space-between;transition:border-color .2s,background .2s}
+.legal-links a:hover{border-color:var(--brand);background:var(--surface);text-decoration:none}.legal-links a::after{content:"→";color:var(--text-tertiary);font-size:18px}
+.legal-content h1{font-size:30px;margin:0 0 6px;letter-spacing:-.4px}
+.legal-content h2{font-size:20px;margin:28px 0 10px;font-weight:600;letter-spacing:-.2px}
+.legal-content h3{font-size:16px;margin:18px 0 8px;font-weight:600}
+.legal-content h4{font-size:14.5px;margin:14px 0 6px;font-weight:600;color:var(--text-secondary)}
+.legal-content p,.legal-content ul{color:var(--text-secondary);font-size:15px;margin:0 0 10px}
+.legal-content ul{padding-left:22px}.legal-content ul li{margin-bottom:4px}
+.legal-content strong{color:var(--text);font-weight:600}
+.legal-content code{background:var(--surface);padding:1px 6px;border-radius:4px;font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:13.5px}
+.legal-content hr{border:none;border-top:1px solid var(--divider);margin:32px 0}
+.legal-content blockquote{border-left:3px solid var(--brand);background:#CDEEE933;padding:12px 16px;margin:16px 0;border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+.legal-content blockquote p{margin:0;color:var(--text)}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--radius-sm)}
+.legal-content table{width:100%;border-collapse:collapse;background:var(--surface);font-size:14px}
+.legal-content th,.legal-content td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--divider)}
+.legal-content th{background:var(--bg);color:var(--text);font-weight:600;font-size:13px;letter-spacing:.2px}
+.legal-content td{color:var(--text-secondary)}
+footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--divider);text-align:center;color:var(--text-tertiary);font-size:13px}
+footer .links{margin-bottom:12px;display:flex;gap:20px;justify-content:center;flex-wrap:wrap}footer .links a{color:var(--text-secondary)}
+@media (max-width:480px){.container{padding:20px 16px 60px}h1,.legal-content h1{font-size:24px}.card{padding:22px}}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo" aria-hidden="true">🌱</div>
+      <h1>Lunivo</h1>
+    </header>
+    <p class="breadcrumb"><a href="./">← Destek</a></p>
+    <p class="last-updated">Son güncelleme: 2026-06-26</p>
+    <div class="legal-content">
+<h1>Lunivo Gizlilik Politikası</h1>
+<p><strong>Yürürlük tarihi:</strong> 2026-06-26 <strong>Son güncelleme:</strong> 2026-06-26 <strong>Sürüm:</strong> 1.0</p>
+<p>Bu Gizlilik Politikası ("<strong>Politika</strong>"), Bayram Baş (bireysel geliştirici) ("<strong>biz</strong>", "<strong>bize</strong>", "<strong>veri sorumlusu</strong>") tarafından geliştirilen ve sunulan Lunivo mobil uygulaması ("<strong>Uygulama</strong>" veya "<strong>Hizmet</strong>") aracılığıyla verilerinizi nasıl işlediğimizi açıklar. Uygulamayı kullanmadan önce bu Politikayı okumanızı rica ederiz.</p>
+<blockquote><p>⚖️ <strong>Hukuki bildirim.</strong> Bu metin, Türkiye'de yürürlükteki 6698 sayılı <strong>Kişisel Verilerin Korunması Kanunu (KVKK)</strong> ile AB <strong>GDPR</strong>, <strong>UK GDPR</strong>, <strong>CCPA/CPRA</strong> ve <strong>COPPA</strong> esas alınarak hazırlanmıştır. Yayınlamadan önce yetkili bir avukat tarafından gözden geçirilmesi tavsiye edilir.</p></blockquote>
+<hr />
+<h2>1. Özetle: verileriniz cihazınızda kalır</h2>
+<p>Lunivo <strong>çevrimdışı ve cihaz-öncelikli</strong> bir uygulamadır. Önemli olan ne kadar veri topladığımız değil — <strong>topladığımız hiçbir kişisel veriyi kendi sunucularımıza göndermeyiz, çünkü böyle bir sunucumuz yoktur.</strong> Girdiğiniz tüm bilgiler ve oluşturduğunuz tüm kayıtlar <strong>yalnızca telefonunuzda</strong> saklanır.</p>
+<ul><li>❌ Hesap yok, üyelik yok, giriş yok.</li><li>❌ Analitik yok, takip (tracking) yok, IDFA yok, reklam yok.</li><li>❌ Üçüncü taraf SDK yok (analitik / çökme raporu / reklam ağı / sosyal giriş yok).</li><li>❌ Verileriniz hiçbir zaman satılmaz, kiralanmaz veya reklam için kullanılmaz.</li><li>✅ Veriler cihazınızda kalır; istediğiniz an silebilir, uygulamayı kaldırarak tamamen yok edebilirsiniz.</li></ul>
+<hr />
+<h2>2. Veri Sorumlusu ve İletişim</h2>
+<ul><li><strong>Ünvan:</strong> Bayram Baş (bireysel geliştirici)</li><li><strong>Adres:</strong> İstanbul, Türkiye (iletişim için <a href="mailto:bayrambas255@icloud.com">bayrambas255@icloud.com</a>)</li><li><strong>Vergi / Sicil No (varsa):</strong> Şahıs geliştirici — ayrı bir ticari vergi kaydı yoktur</li><li><strong>VERBİS kaydı (KVKK gerektiriyorsa):</strong> Muaf — KVKK m.16 ve VERBİS yönetmeliği uyarınca eşik altı şahıs geliştirici</li><li><strong>İletişim / gizlilik talepleri:</strong> <a href="mailto:bayrambas255@icloud.com">bayrambas255@icloud.com</a></li></ul>
+<hr />
+<h2>3. Politikanın Kapsamı</h2>
+<p>Bu Politika; Apple platformlarında dağıtılan <strong>Lunivo</strong> uygulamasını, uygulama içi tüm özellikleri ve tanıtım web sayfamızı (<a href="https://bayrambas255.github.io/lunivo-support" target="_blank" rel="noopener">https://bayrambas255.github.io/lunivo-support</a>) kapsar.</p>
+<p>Bu Politika <strong>şunları kapsamaz</strong>: uygulamadan ulaşabileceğiniz üçüncü taraf hizmetlerin (Apple App Store, Apple Health, açtığınız harici bağlantılar) gizlilik uygulamaları. Bunların gizlilik politikalarını kendi sayfalarından incelemeniz gerekir.</p>
+<hr />
+<h2>4. İşlenen Veriler ve İşlenme Yeri</h2>
+<p>Aşağıdaki tüm veriler <strong>yalnızca cihazınızda</strong> işlenir ve saklanır. Bizim bu verilere erişimimiz yoktur.</p>
+<h3>4.1 Sizin girdiğiniz profil bilgileri</h3>
+<div class="table-wrap"><table><thead><tr><th>Veri</th><th>Nerede</th><th>Saklama</th></tr></thead><tbody><tr><td>Ad / takma ad (opsiyonel)</td><td>Cihazda</td><td>Siz silene kadar</td></tr><tr><td>Yaş, cinsiyet, boy, kilo</td><td>Cihazda</td><td>Siz silene kadar</td></tr><tr><td>Hedefler ve plan tercihleri</td><td>Cihazda</td><td>Siz silene kadar</td></tr></tbody></table></div>
+<h3>4.2 Sizin oluşturduğunuz kayıtlar</h3>
+<p>Öğün ve kalori/makro kayıtları, su ve kilo girişleri, alışkanlıklar, antrenman ve yürüyüş kayıtları, ağrı/iyilik notları ve günlük geçmiş — hepsi <strong>cihazınızda</strong> saklanır.</p>
+<h3>4.3 Apple Health (HealthKit) verileri</h3>
+<p>İzin verirseniz Lunivo, Apple HealthKit üzerinden adım, yürüyüş mesafesi, aktif enerji, egzersiz ve kilo verilerinizi <strong>okur</strong>; kaydettiğiniz kiloyu Apple Health'e <strong>yazar</strong>.</p>
+<p><strong>Önemli:</strong> Apple HealthKit verileri <strong>cihazınızda</strong> işlenir, bir sunucuya gönderilmez, reklam amacıyla kullanılmaz ve üçüncü taraflara aktarılmaz. İzni Apple Health veya iOS Ayarlar üzerinden istediğiniz an geri çekebilirsiniz.</p>
+<h3>4.4 Uygulama ayarları ve bildirimler</h3>
+<p>Tercihleriniz cihazda (UserDefaults) saklanır. Kurduğunuz hatırlatıcılar <strong>yerel bildirim</strong> olarak iOS tarafından planlanır — uzaktan bildirim (push), APNs cihaz tokenı veya sunucu <strong>kullanılmaz</strong>.</p>
+<h3>4.5 Face ID</h3>
+<p>Uygulamayı Face ID ile kilitlemeyi seçerseniz, kimlik doğrulama tamamen iOS ve cihazın güvenli donanımı (Secure Enclave) tarafından yapılır. <strong>Biyometrik verinize hiçbir zaman erişmeyiz</strong>; yalnızca iOS'tan "doğrulandı/doğrulanmadı" sonucunu alırız.</p>
+<hr />
+<h2>5. Yapmadığımız Şeyler</h2>
+<p>Açıkça beyan ederiz ki Lunivo şunları <strong>yapmaz</strong>:</p>
+<ul><li>Sunucularımıza kişisel veri göndermez (kişisel veri için sunucu işletmiyoruz).</li><li>Analitik, davranışsal izleme, IDFA toplama veya cross-app tracking yapmaz; bu nedenle Apple ATT izni istemez.</li><li>Reklam göstermez, reklam ağı veya veri komisyoncusu kullanmaz.</li><li>Üçüncü taraf analitik / çökme raporu / sosyal giriş SDK'sı barındırmaz.</li><li>Verilerinizi satmaz, kiralamaz veya pazarlama için paylaşmaz.</li></ul>
+<hr />
+<h2>6. Tek İstisna: Apple Platform Hizmetleri</h2>
+<p>Verileriniz cihazınızda kalsa da, Apple'ın işletim sistemi hizmetleriyle aşağıdaki sınırlı etkileşimler olur:</p>
+<ul><li><strong>Apple App Store / StoreKit (Lunivo Pro satın alımı):</strong> Ödeme tamamen <strong>Apple</strong> tarafından işlenir. Kart numaranıza, banka bilgilerinize veya CVV'nize <strong>erişmeyiz ve saklamayız</strong>. Apple bize yalnızca aboneliğin durumunu (aktif/değil) ve işlem doğrulamasını bildirir; bunu Pro özelliklerini açmak için kullanırız. Apple'ın gizlilik uygulamaları için: apple.com/legal/privacy</li><li><strong>Apple HealthKit:</strong> Yukarıda 4.3'te açıklandığı gibi, cihaz üzerinde.</li><li><strong>Harici bağlantılar:</strong> Gizlilik, koşullar veya destek bağlantısına dokunduğunuzda iOS tarayıcınızı veya Mail uygulamanızı açar; bu hizmetler kendi politikalarına tabidir.</li></ul>
+<p>Apple, bu Politikanın tarafı değildir ve kendi gizlilik kurallarına göre hareket eder.</p>
+<hr />
+<h2>7. İşleme Amaçları ve Hukuki Sebepler (KVKK / GDPR)</h2>
+<div class="table-wrap"><table><thead><tr><th>Amaç</th><th>İşlenen veri</th><th>KVKK</th><th>GDPR</th></tr></thead><tbody><tr><td>Uygulamanın özelliklerini cihazınızda sunmak</td><td>Profil + kayıtlar</td><td>Sözleşmenin ifası</td><td>6(1)(b)</td></tr><tr><td>Apple Health entegrasyonu</td><td>HealthKit verileri</td><td>Açık rıza</td><td>6(1)(a)</td></tr><tr><td>Lunivo Pro aboneliğini etkinleştirmek</td><td>Apple abonelik durumu</td><td>Sözleşmenin ifası</td><td>6(1)(b)</td></tr><tr><td>Hatırlatıcı bildirimleri</td><td>Tercihleriniz</td><td>Açık rıza (bildirim izni)</td><td>6(1)(a)</td></tr></tbody></table></div>
+<p>Veriler cihazınızda işlendiğinden, bu işleme büyük ölçüde sizin doğrudan kontrolünüzdedir.</p>
+<hr />
+<h2>8. Saklama ve Silme</h2>
+<ul><li>Tüm veriler <strong>siz silene kadar</strong> cihazınızda kalır.</li><li>Tek tek kayıtları uygulama içinden silebilirsiniz.</li><li>Uygulama içindeki <strong>Verileri Sil</strong> akışıyla tüm verilerinizi tek seferde kaldırabilirsiniz.</li><li><strong>Uygulamayı kaldırmanız</strong>, cihazınızdaki tüm Lunivo verilerini siler.</li><li>Bizde sizin kişisel verilerinizin bir kopyası bulunmadığından, ayrıca bizden silme talep etmenize gerek yoktur. Apple tarafındaki satın alma kayıtları Apple'ın saklama politikasına tabidir.</li></ul>
+<hr />
+<h2>9. Haklarınız</h2>
+<p>KVKK Madde 11 ve GDPR kapsamında verilerinize erişme, düzeltme, silme ve işlemeyi sınırlama haklarınız vardır. Verileriniz cihazınızda olduğundan, bu hakların çoğunu <strong>doğrudan uygulama içinden</strong> kullanırsınız:</p>
+<ul><li><strong>Erişim / düzeltme:</strong> Profil ve kayıt ekranlarından.</li><li><strong>Silme:</strong> Tek tek veya <strong>Verileri Sil</strong> ile toptan; ya da uygulamayı kaldırarak.</li><li><strong>Rıza geri çekme:</strong> Apple Health ve bildirim izinlerini iOS Ayarlar'dan kapatarak.</li></ul>
+<p>Yine de bize ulaşmak isterseniz: <a href="mailto:bayrambas255@icloud.com">bayrambas255@icloud.com</a>. Talebinizi en geç <strong>30 gün</strong> içinde yanıtlarız.</p>
+<hr />
+<h2>10. Güvenlik</h2>
+<ul><li>Veriler iOS uygulama sandbox'ı içinde, cihazınızda saklanır.</li><li>İsteğe bağlı <strong>Face ID kilidi</strong> ek koruma sağlar.</li><li>Veriler cihazdan çıkmadığı için sunucu sızıntısı, aktarım dinlemesi gibi riskler ortadan kalkar.</li></ul>
+<p>Hiçbir yöntem %100 güvenli olmasa da, cihaz-öncelikli mimari kişisel verileriniz için en düşük maruziyeti hedefler.</p>
+<hr />
+<h2>11. Çocuklar</h2>
+<p>Uygulama <strong>13 yaş altındaki kişiler için tasarlanmamıştır</strong>. Bilerek 13 yaş altı çocuklardan veri toplamayız (zaten kişisel veri toplamıyoruz). Bir çocuğun cihazında kişisel bilgi girildiğini düşünüyorsanız, cihaz üzerinden <strong>Verileri Sil</strong> ile kaldırabilirsiniz.</p>
+<hr />
+<h2>12. Otomatik İşleme (Uyarlanan Plan)</h2>
+<p>Lunivo, kalori aralığınızı <strong>kendi cihazınızdaki ilerleme verilerinize</strong> göre haftalık olarak yeniden hesaplar. Bu kişiselleştirme tamamen cihazınızda gerçekleşir; dışarıya aktarılan bir profilleme veya üçüncü taraf karar mekanizması <strong>yoktur</strong> ve sizin üzerinizde hukuki/önemli bir etki doğurmaz. Hedeflerinizi istediğiniz an <strong>manuel</strong> olarak değiştirebilirsiniz.</p>
+<hr />
+<h2>13. Uluslararası Veri Aktarımı</h2>
+<p>Kişisel verileriniz cihazınızdan çıkmadığı için <strong>uluslararası veri aktarımı yapılmaz</strong>. Apple üzerinden gerçekleşen satın alma işlemleri Apple'ın kendi altyapısı ve politikalarına tabidir.</p>
+<hr />
+<h2>14. Çerezler, SDK'lar ve İzleyiciler</h2>
+<p>Uygulama <strong>çerez, izleme SDK'sı veya analitik aracı kullanmaz</strong>.</p>
+<hr />
+<h2>15. Politika Güncellemeleri</h2>
+<p>Bu Politikayı zaman zaman güncelleyebiliriz. Önemli değişikliklerde güncel sürümü <a href="https://bayrambas255.github.io/lunivo-support-support/tr/privacy.html" target="_blank" rel="noopener">https://bayrambas255.github.io/lunivo-support-support/tr/privacy.html</a> adresinde yayınlar ve metnin başındaki yürürlük tarihini güncelleriz.</p>
+<hr />
+<h2>16. Şikayet ve Başvuru</h2>
+<p>Önce bizimle iletişime geçin: <a href="mailto:bayrambas255@icloud.com">bayrambas255@icloud.com</a>. Tatmin olmazsanız ikamet ettiğiniz ülkenin denetim otoritesine başvurabilirsiniz:</p>
+<ul><li><strong>Türkiye:</strong> Kişisel Verileri Koruma Kurumu (KVKK) — kvkk.gov.tr</li><li><strong>AB:</strong> Ülkenizin Veri Koruma Otoritesi — edpb.europa.eu</li></ul>
+<hr />
+<h2>17. İletişim</h2>
+<p>Bu Gizlilik Politikası hakkında her türlü soru için:</p>
+<ul><li><strong>E-posta:</strong> <a href="mailto:bayrambas255@icloud.com">bayrambas255@icloud.com</a></li><li><strong>Web:</strong> <a href="https://bayrambas255.github.io/lunivo-support" target="_blank" rel="noopener">https://bayrambas255.github.io/lunivo-support</a></li></ul>
+    </div>
+    <footer>
+      <div class="links"><a href="privacy.html">Gizlilik</a><a href="terms.html">Koşullar</a><a href="./">Destek</a></div>
+      © <span id="year">2026</span> Lunivo · <a href="mailto:bayrambas255@icloud.com">bayrambas255@icloud.com</a>
+    </footer>
+  </div>
+  <script>var y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();</script>
+</body>
+</html>
